@@ -9,3 +9,6 @@ _site/
 vendor/
 
 .DS_Store
+.trunk/
+.markdownlint.yaml
+.srh/

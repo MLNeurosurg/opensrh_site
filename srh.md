@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: srhpage
 title: SRH
 permalink: /srh/
 ---

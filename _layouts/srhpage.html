@@ -1,201 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
-    <title>SRH | OpenSRH</title>
-    <meta name="generator" content="Jekyll v3.9.2" />
-    <meta property="og:title" content="SRH" />
-    <meta property="og:locale" content="en_US" />
-    <meta
-      name="description"
-      content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-    />
-    <meta
-      property="og:description"
-      content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-    />
-    <link rel="canonical" href="http://localhost:4000/srh/" />
-    <meta property="og:url" content="http://localhost:4000/srh/" />
-    <meta property="og:site_name" content="OpenSRH" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
-    <meta property="twitter:title" content="SRH" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "description": "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.",
-        "headline": "SRH",
-        "url": "http://localhost:4000/srh/"
-      }
-    </script>
-    <!-- End Jekyll SEO tag -->
-    <!-- head definition for all pages -->
+---
+layout: default
+---
 
-    <link rel="stylesheet" href="/assets/main.css" />
-    <link
-      type="application/atom+xml"
-      rel="alternate"
-      href="http://localhost:4000/feed.xml"
-      title="OpenSRH"
-    />
-  </head>
-  <body>
-    <header class="site-header" role="banner">
-      <div class="wrapper">
-        <a class="site-title" rel="author" href="/">OpenSRH</a>
-        <nav class="site-nav">
-          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-          <label for="nav-trigger">
-            <span class="menu-icon">
-              <svg viewBox="0 0 18 15" width="18px" height="15px">
-                <path
-                  d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"
-                />
-              </svg>
-            </span>
-          </label>
+<h4 class="post-title">SRH workflow</h4>
 
-          <div class="trigger">
-            <a class="page-link" href="/about/">About</a
-            ><a class="page-link" href="/contact/">Contact</a
-            ><a class="page-link" href="/images/">Images</a
-            ><a class="page-link" href="/srh/">SRH</a>
-            <a class="page-link" href="/data-request">Request Data</a>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="post">
-          <header class="post-header">
-            <h4 class="post-title">SRH workflow</h4>
-          </header>
-          <div class="srh-workflow-image">
-            <img src="/assets/images/srh-workflow.png" alt="srh-workflow" />
-          </div>
-          <div class="srh-workflow-description">
-            <p>
-              <b>Placeholder text:</b> Stimulated Raman histology (SRH) and
-              contrastive representation learning framework. (A) Our clinical
-              SRH imager used for intraoperative imaging of fresh brain tumor
-              specimens. SRH images are obtained by imaging at two Raman shifts:
-              2,845 cm-1 and2,950 cm-1. Lipid-rich regions (for example,
-              myelinated white matter) demonstrate high SRS signal at 2,845 cm-1
-              due to CH2 symmetric stretching in fatty acids. Cellular regions
-              produce high 2,930 cm-1 intensity and large 2,930 : 2,845 ratios
-              to high protein and nucleic acid content. The subtracted image
-              highlights cellularity and nuclei. A virtual H&E color scheme is
-              applied to transform the raw stimulated Raman scattering images
-              into SRH images for clinical use and pathologic review.
-              <b>(B)</b> Contrastive representation learning involves selecting
-              a pair of positive image examples. In the self-supervised setting,
-              this pair is generated by sampling two random transformations from
-              a set of transformations, T , such as image blurring (t1) or
-              flipping (t2), and applying the transformations to a single image,
-              x, to get x1 and x2. Both images undergo a feed-forward pass
-              through an SRH feature extractor, which is a convolutional neural
-              network. x1 and x2 now have normalized vector representations, z1
-              and z2, which can then be compared using a similarity metric on
-              the unit hypersphere. The objective of contrastive learning is to
-              make the similarity metric between positive examples large and
-              negative examples small. This corresponds to placing
-              representations of positive pairs in close proximity to each other
-              and pushing negative pairs away. In the case of supervised
-              contrastive learning, positive examples are pairs from the same
-              diagnostic class and negative examples are from all other classes.
-              (C) Finally, after training our SRH feature extractor using
-              contrastive learning, we train a linear classification layer to
-              provide a probability distribution over our output classes.
-            </p>
-          </div>
-          <!-- <li>
-        <p>
-          <strong>Step 4:</strong>
-          <br>
-          Add a new SRH to the database
-        </p>
-      </li>
-      <li>
-        <p>
-          <strong>Step 5:</strong>
-          <br>
-          Add a new SRH to the database
-        </p>
-      </li>
-      </li>
-    </ul>
-  </div>
-   -->
-
-          <div class="post-content"></div>
-
-          <!-- <div class="test">
-  <h1>Test</h1>
+<div class="srh-workflow-image">
+  <img src="/assets/images/srh-workflow.png" alt="srh-workflow" />
+</div>
+<div class="srh-workflow-description">
   <p>
-    This is a test paragraph.
+    <b>Placeholder text:</b> Stimulated Raman histology (SRH) and
+    contrastive representation learning framework. (A) Our clinical
+    SRH imager used for intraoperative imaging of fresh brain tumor
+    specimens. SRH images are obtained by imaging at two Raman shifts:
+    2,845 cm-1 and2,950 cm-1. Lipid-rich regions (for example,
+    myelinated white matter) demonstrate high SRS signal at 2,845 cm-1
+    due to CH2 symmetric stretching in fatty acids. Cellular regions
+    produce high 2,930 cm-1 intensity and large 2,930 : 2,845 ratios
+    to high protein and nucleic acid content. The subtracted image
+    highlights cellularity and nuclei. A virtual H&E color scheme is
+    applied to transform the raw stimulated Raman scattering images
+    into SRH images for clinical use and pathologic review.
+    <b>(B)</b> Contrastive representation learning involves selecting
+    a pair of positive image examples. In the self-supervised setting,
+    this pair is generated by sampling two random transformations from
+    a set of transformations, T , such as image blurring (t1) or
+    flipping (t2), and applying the transformations to a single image,
+    x, to get x1 and x2. Both images undergo a feed-forward pass
+    through an SRH feature extractor, which is a convolutional neural
+    network. x1 and x2 now have normalized vector representations, z1
+    and z2, which can then be compared using a similarity metric on
+    the unit hypersphere. The objective of contrastive learning is to
+    make the similarity metric between positive examples large and
+    negative examples small. This corresponds to placing
+    representations of positive pairs in close proximity to each other
+    and pushing negative pairs away. In the case of supervised
+    contrastive learning, positive examples are pairs from the same
+    diagnostic class and negative examples are from all other classes.
+    (C) Finally, after training our SRH feature extractor using
+    contrastive learning, we train a linear classification layer to
+    provide a probability distribution over our output classes.
   </p>
-</div> -->
-        </article>
-      </div>
-    </main>
-    <footer class="site-footer h-card">
-      <data class="u-url" href="/"></data>
-
-      <div class="wrapper">
-        <h2 class="footer-heading">OpenSRH</h2>
-
-        <div class="footer-col-wrapper">
-          <div class="footer-col footer-col-1">
-            <ul class="contact-list">
-              <li class="p-name">OpenSRH</li>
-              <li>
-                <a class="u-email" href="mailto:opensrh.admin@umich.edu"
-                  >opensrh.admin@umich.edu</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-col footer-col-2">
-            <ul class="social-media-list">
-              <li>
-                <a href="https://github.com/jekyll"
-                  ><svg class="svg-icon">
-                    <use
-                      xlink:href="/assets/minima-social-icons.svg#github"
-                    ></use>
-                  </svg>
-                  <span class="username">jekyll</span></a
-                >
-              </li>
-              <li>
-                <a href="https://www.twitter.com/jekyllrb"
-                  ><svg class="svg-icon">
-                    <use
-                      xlink:href="/assets/minima-social-icons.svg#twitter"
-                    ></use>
-                  </svg>
-                  <span class="username">jekyllrb</span></a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-col footer-col-3">
-            <p>
-              Write an awesome description for your new site here. You can edit
-              this line in _config.yml. It will appear in your document head
-              meta (for Google search results) and in your feed.xml site
-              description.
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+</div>

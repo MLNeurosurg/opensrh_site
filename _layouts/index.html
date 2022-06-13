@@ -5,15 +5,39 @@ layout: default
 <img src="/assets/images/opensrh_banner.png" alt="OpenSRH Banner" style="min-width: 100%">
 
 <div style="display:flex; justify-content: center; flex-wrap:wrap; margin:0px">
-<!--img class="main-panel" src="/assets/images/normal.png"     alt="HGG"-->
-<img class="main-panel" src="/assets/images/hgg.png"        alt="HGG">
-<img class="main-panel" src="/assets/images/lgg.png"        alt="HGG">
-<img class="main-panel" src="/assets/images/schwan.png"     alt="HGG">
-<img class="main-panel" src="/assets/images/mening.png"     alt="HGG">
-<img class="main-panel" src="/assets/images/pit.png"        alt="HGG">
-<!--img class="main-panel" src="/assets/images/adeno.png"      alt="HGG">
-<img class="main-panel" src="/assets/images/mela.png"       alt="HGG"-->
-<img class="main-panel" src="/assets/images/small_cell.png" alt="HGG">
+    <div class="main-container">
+        <img class="panel-image" src="/assets/images/hgg.png" alt="High Grade Glioma">
+        <div class="label">High Grade Glioma</div>
+    </div>
+    <div class="main-container">
+        <img class="panel-image" src="/assets/images/lgg.png" alt="Low Grade Glioma">
+        <div class="label">Low Grade Glioma</div>
+    </div>
+    <div class="main-container">
+        <img class="panel-image" src="/assets/images/schwan.png" alt="Schwannoma">
+        <div class="label">Schwannoma</div>
+    </div>
+    <div class="main-container">
+        <img class="panel-image" src="/assets/images/mening.png" alt="Meningioma">
+        <div class="label">Meningioma</div>
+    </div>
+    <div class="main-container">
+        <img class="panel-image" src="/assets/images/pit.png" alt="Pituitary Adenoma">
+        <div class="label">Pituitary Adenoma</div>
+    </div>
+    <div class="main-container">
+        <img class="panel-image" src="/assets/images/small_cell.png" alt="Metastasis">
+        <div class="label">Metastasis</div>
+    </div>
+
+    <!--img class="main-panel" src="/assets/images/hgg.png" alt="HGG">
+    <img class="main-panel" src="/assets/images/lgg.png" alt="HGG">
+    <img class="main-panel" src="/assets/images/schwan.png" alt="HGG">
+    <img class="main-panel" src="/assets/images/mening.png" alt="HGG">
+    <img class="main-panel" src="/assets/images/pit.png" alt="HGG"-->
+    <!--img class="main-panel" src="/assets/images/adeno.png"      alt="HGG">
+    <img class="main-panel" src="/assets/images/mela.png"       alt="HGG">
+    <img class="main-panel" src="/assets/images/small_cell.png" alt="HGG"-->
 </div>
 
 <div style="background-color: #eeeeef; border-radius:10px;padding:20px;margin-top:20px">
@@ -30,7 +54,8 @@ layout: default
         Sandra Camelo-Piragua<sup>1</sup>,
         Daniel A. Orringer<sup>3</sup>,
         Honglak Lee<sup>1</sup>,
-        and Todd C. Hollon<sup>1</sup></p>
+        and Todd C. Hollon<sup>1</sup>
+    </p>
     <p style="margin-bottom:10px; margin-top: 15px; color: #696969;">
         <sup>1</sup>University of Michigan
         <sup>2</sup><a href="https://www.invenio-imaging.com">Invenio Imaging</a>
@@ -42,7 +67,20 @@ layout: default
         <a class="pill" href="/">Github (coming soon!)</a>
     </div>
     <hr class="carddiv">
-    <p><b>Abstract: </b> Accurate intraoperative diagnosis is essential for providing safe and effective care during brain tumor surgery. Our standard-of-care diagnostic methods are time, resource, and labor intensive, which restricts access to optimal surgical treatments. To address these limitations, we propose an alternative workflow that combines stimulated Raman histology (SRH), a rapid optical imaging method, with deep learning-based automated interpretation of SRH images for intraoperative brain tumor diagnosis and real-time surgical decision support. Here, we present <i>OpenSRH</i>, the first public dataset of clinical SRH images from 300+ brain tumors patients and 1300+ unique whole slide optical images. OpenSRH contains data from the most common brain tumors diagnoses, full pathologic annotations, whole slide tumor segmentations, raw and processed optical imaging data for end-to-end model development and validation. We provide a framework for patch-based whole slide SRH classification and inference using weak (i.e. patient-level) diagnostic labels. Finally, we benchmark two computer vision tasks: multiclass histologic brain tumor classification and patch-based contrastive representation learning. We hope OpenSRH will facilitate the clinical translation of rapid optical imaging and real-time ML-based surgical decision support in order to improve the access, safety, and efficacy of cancer surgery in the era of precision medicine.</p>
+    <p><b>Abstract: </b> Accurate intraoperative diagnosis is essential for providing safe and effective care during
+        brain tumor surgery. Our standard-of-care diagnostic methods are time, resource, and labor intensive, which
+        restricts access to optimal surgical treatments. To address these limitations, we propose an alternative
+        workflow that combines stimulated Raman histology (SRH), a rapid optical imaging method, with deep
+        learning-based automated interpretation of SRH images for intraoperative brain tumor diagnosis and real-time
+        surgical decision support. Here, we present <i>OpenSRH</i>, the first public dataset of clinical SRH images from
+        300+ brain tumors patients and 1300+ unique whole slide optical images. OpenSRH contains data from the most
+        common brain tumors diagnoses, full pathologic annotations, whole slide tumor segmentations, raw and processed
+        optical imaging data for end-to-end model development and validation. We provide a framework for patch-based
+        whole slide SRH classification and inference using weak (i.e. patient-level) diagnostic labels. Finally, we
+        benchmark two computer vision tasks: multiclass histologic brain tumor classification and patch-based
+        contrastive representation learning. We hope OpenSRH will facilitate the clinical translation of rapid optical
+        imaging and real-time ML-based surgical decision support in order to improve the access, safety, and efficacy of
+        cancer surgery in the era of precision medicine.</p>
     <!--
     <hr class="carddiv">
     <pre style="margin-bottom:0px; background-color: #dddddd; border-color: #aaaaaa">

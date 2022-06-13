@@ -1,7 +1,5 @@
-# Work in progress.
+# opensrh.mlins.org
 
-The website is under construction.
+This repo is the website for _OpenSRH: optimizing brain tumor surgery using intraoperative stimulated Raman histology_.
 
-## TODO: 
-    -   Upload data
-    -   create patch panel image
+The website is a work in progress, part of it is still under construction.

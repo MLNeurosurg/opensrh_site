@@ -5,7 +5,7 @@ layout: default
 {% for i in site.data.card %}
 <div class="image-card">
   <div class="image-card-left">
-    <img class="image-card-img" src="/assets/images/mening.png">
+    <img class="image-card-img" src={{ i[1].im_path }}>
   </div>
   <div class="image-card-right">
     <h2 class="img-card-cname">{{i[1].title}}</h2>

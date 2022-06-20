@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% for i in site.data.card %}
+<div class="image-card">
+  <div class="image-card-left">
+    <img class="image-card-img" src="/assets/images/mening.png">
+  </div>
+  <div class="image-card-right">
+    <h2 class="img-card-cname">{{i[1].title}}</h2>
+    <div class=image-card-body>
+      <div class="image-card-stat">
+        <h2>{{i[1].patients}}</h2>
+        <p style="margin-bottom: 0px;">patients</p> 
+      </div>
+      <div class="image-card-stat">
+        <h2>{{i[1].slides}}</h2>
+        <p style="margin-bottom: 0px;">slides</p> 
+      </div>
+      <div class="image-card-stat">
+        <h2>{{i[1].patches}}</h2>
+        <p style="margin-bottom: 0px;">patches</p> 
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}

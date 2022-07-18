@@ -1,44 +1,42 @@
-HGG:
+hgg:
     title: "High Grade Glioma"
-    patients: 54
-    slides: 224
-    patches: "48k"
-    im_path: "/assets/images/hgg.png"
-LGG:
+    patients: 56
+    slides: 227
+    patches: 48K
+    im_path: https://deepglioma-dziserver.s3.amazonaws.com/opensrh/NIO_001.4_hgg.tiff.dzi
+lgg:
     title: "Low Grade Glioma"
-    patients: 53
-    slides: 198
-    patches: "42k"
-    im_path: "/assets/images/lgg.png"
-Metastasis:
+    patients: 51
+    slides: 190
+    patches: 40K
+    im_path: https://deepglioma-dziserver.s3.amazonaws.com/opensrh/NIO_064.1_lgg.tiff.dzi
+mets:
     title: "Metastasis"
     patients: 52
     slides: 174
-    patches: "34k"
-    im_path: "/assets/images/mela.png"
-Meningioma:
+    patches: 34K
+    im_path: https://deepglioma-dziserver.s3.amazonaws.com/opensrh/NIO_200.1_met.tiff.dzi
+mening:
     title: "Meningioma"
     patients: 52
     slides: 230
-    patches: "53k"
-    im_path: "/assets/images/mening.png"
-Pituitary Adenoma:
+    patches: 53K
+    im_path: https://deepglioma-dziserver.s3.amazonaws.com/opensrh/NIO_131.5_mening.tiff.dzi
+pit:
     title: "Pituitary Adenoma"
     patients: 52
     slides: 254
-    patches: "66k"
-    im_path: "/assets/images/pit.png"
-Schwannoma:
+    patches: 66K
+    im_path: https://deepglioma-dziserver.s3.amazonaws.com/opensrh/NIO_001.4_hgg.tiff.dzi
+schwan:
     title: "Schwannoma"
     patients: 20
     slides: 69
-    patches: "15k"
-    im_path: "/assets/images/schwan.png"
-Normal:
+    patches: 15K
+    im_path: https://deepglioma-dziserver.s3.amazonaws.com/opensrh/NIO_271.3_schwan.tiff.dzi
+mormal:
     title: "Normal"
     patients: 24
     slides: 183
-    patches: "32k"
-    im_path: "/assets/images/normal.png"
-  
-
+    patches: 32K
+    im_path: https://deepglioma-dziserver.s3.amazonaws.com/opensrh/NIO_302.2_normal.tiff.dzi

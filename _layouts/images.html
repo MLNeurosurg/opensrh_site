@@ -3,26 +3,20 @@ layout: default
 ---
 
 {% for i in site.data.card %}
+<h2 style="margin-top:0px;" class="img-card-cname">{{i[1].title}}</h2>
 <div class="image-card">
-  <div class="image-card-left">
-    <img class="image-card-img" src={{ i[1].im_path }}>
-  </div>
-  <div class="image-card-right">
-    <h2 class="img-card-cname">{{i[1].title}}</h2>
-    <div class=image-card-body>
-      <div class="image-card-stat">
-        <h2>{{i[1].patients}}</h2>
-        <p style="margin-bottom: 0px;">patients</p> 
-      </div>
-      <div class="image-card-stat">
-        <h2>{{i[1].slides}}</h2>
-        <p style="margin-bottom: 0px;">slides</p> 
-      </div>
-      <div class="image-card-stat">
-        <h2>{{i[1].patches}}</h2>
-        <p style="margin-bottom: 0px;">patches</p> 
-      </div>
-    </div>
-  </div>
+    <div id="{{i[0]}}" class="dz-im-card"></div>
+    <script src="/openseadragon/openseadragon.min.js"></script>
+    <script type="text/javascript">
+        var viewer = OpenSeadragon({
+            id: "{{i[0]}}",
+            prefixUrl: "/openseadragon/images/",
+            tileSources: "{{i[1].im_path}}",
+            homeFillsViewer: true,
+            defaultZoomLevel: 4,
+            minZoomImageRatio: .25,
+            autoHideControls: false
+        });
+    </script>
 </div>
 {% endfor %}

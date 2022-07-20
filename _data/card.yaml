@@ -27,14 +27,14 @@ pit:
     patients: 52
     slides: 254
     patches: 66K
-    im_path: https://deepglioma-dziserver.s3.amazonaws.com/opensrh/NIO_001.4_hgg.tiff.dzi
+    im_path: https://deepglioma-dziserver.s3.amazonaws.com/opensrh/NIO_245.2_pit.tiff.dzi
 schwan:
     title: "Schwannoma"
     patients: 20
     slides: 69
     patches: 15K
     im_path: https://deepglioma-dziserver.s3.amazonaws.com/opensrh/NIO_271.3_schwan.tiff.dzi
-mormal:
+normal:
     title: "Normal"
     patients: 24
     slides: 183

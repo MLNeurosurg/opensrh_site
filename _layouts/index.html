@@ -4,6 +4,40 @@ layout: default
 
 <img src="/assets/images/opensrh_banner.png" alt="OpenSRH Banner" style="min-width: 100%">
 
+<div style="background-color: #eeeeef; border-radius:10px;padding:20px;margin:20px 0 20px 0">
+    <p style="margin-bottom:0px; color: #531B93; font-weight:bold;">
+        NeurIPS 2022 Datasets and Benchmarks Track
+    </p>
+    <p class="publication" style="margin-bottom:0px">
+        OpenSRH: Optimizing Brain Tumor Surgery Using Intraoperative Stimulated Raman Histology
+    </p>
+    <p style="margin-bottom:0px; color: #696969; font-weight:bold;">
+        <a href="https://chengjia.me"> Cheng Jiang</a><sup>1*</sup>,
+        Asadur Chowdury<sup>1*</sup>,
+        <a href="https://medicine.umich.edu/dept/dcmb/xinhai-hou">Xinhai Hou</a><sup>1*</sup>,
+        Akhil Kondepudi<sup>1</sup>,
+        Christian W. Freudiger<sup>2</sup>,
+        Kyle Conway<sup>1</sup>,
+        Sandra Camelo-Piragua<sup>1</sup>,
+        Daniel A. Orringer<sup>3</sup>,
+        Honglak Lee<sup>1</sup>,
+        and Todd C. Hollon<sup>1</sup>
+    </p>
+    <p style="margin-bottom:10px; color: #696969;">
+        <sup>1</sup>University of Michigan
+        <sup>2</sup><a href="https://www.invenio-imaging.com">Invenio Imaging</a>
+        <sup>3</sup>New York University
+        <sup>*</sup>Equal Contribution
+    </p>
+    <div>
+        <a class="pill" href="https://arxiv.org/abs/2206.08439">arXiv</a>
+        <a class="pill" href="https://github.com/MLNeurosurg/opensrh">Github</a>
+        <a class="pill" href="https://openreview.net/forum?id=2N8JzuiWZ25">OpenReview</a>
+    </div>
+    <!--hr class="carddiv"-->
+</div>
+
+
 <div style="display:flex; justify-content: center; flex-wrap:wrap; margin:0px">
     <div class="main-container">
         <img class="panel-image" src="/assets/images/normal.png" alt="Metastasis">
@@ -42,69 +76,48 @@ layout: default
         <div class="label">Metastasis - Melanoma</div>
     </div>
 </div>
-<div style="background-color: #eeeeef; border-radius:10px;padding:20px;margin:20px 0 20px 0">
-    <p style="margin-bottom:0px; color: #531B93; font-weight:bold;">
-        To appear in NeurIPS 2022 Datasets and Benchmarks Track
-    </p>
-    <p class="publication" style="margin-bottom:0px">
-        OpenSRH: Optimizing Brain Tumor Surgery Using Intraoperative Stimulated Raman Histology
-    </p>
-    <p style="margin-bottom:0px; color: #696969; font-weight:bold;">
-        <a href="https://chengjia.me"> Cheng Jiang</a><sup>1*</sup>,
-        Asadur Chowdury<sup>1*</sup>,
-        <a href="https://medicine.umich.edu/dept/dcmb/xinhai-hou">Xinhai Hou</a><sup>1*</sup>,
-        Akhil Kondepudi<sup>1</sup>,
-        Christian W. Freudiger<sup>2</sup>,
-        Kyle Conway<sup>1</sup>,
-        Sandra Camelo-Piragua<sup>1</sup>,
-        Daniel A. Orringer<sup>3</sup>,
-        Honglak Lee<sup>1</sup>,
-        and Todd C. Hollon<sup>1</sup>
-    </p>
-    <p style="margin-bottom:10px; color: #696969;">
-        <sup>1</sup>University of Michigan
-        <sup>2</sup><a href="https://www.invenio-imaging.com">Invenio Imaging</a>
-        <sup>3</sup>New York University
-        <sup>*</sup>Equal Contribution
-    </p>
-    <div>
-        <a class="pill" href="https://arxiv.org/abs/2206.08439">arXiv</a>
-        <a class="pill" href="https://github.com/MLNeurosurg/opensrh">Github</a>
-        <a class="pill" href="https://openreview.net/forum?id=2N8JzuiWZ25">OpenReview</a>
-    </div>
+
+<div style="background-color: #eeeeef; border-radius:10px;padding:20px;margin-top:20px">
+    <p style="margin: 0px;"><b>Abstract: </b> Accurate intraoperative diagnosis
+    is essential for providing safe and effective care during brain tumor
+    surgery. Our standard-of-care diagnostic methods are time, resource, and
+    labor intensive, which restricts access to optimal surgical treatments. To
+    address these limitations, we propose an alternative workflow that combines
+    stimulated Raman histology (SRH), a rapid optical imaging method, with deep
+    learning-based automated interpretation of SRH images for intraoperative
+    brain tumor diagnosis and real-time surgical decision support. Here, we
+    present <i>OpenSRH</i>, the first public dataset of clinical SRH images
+    from 300+ brain tumors patients and 1300+ unique whole slide optical
+    images. OpenSRH contains data from the most common brain tumors diagnoses,
+    full pathologic annotations, whole slide tumor segmentations, raw and
+    processed optical imaging data for end-to-end model development and
+    validation. We provide a framework for patch-based whole slide SRH
+    classification and inference using weak (i.e. patient-level) diagnostic
+    labels. Finally, we benchmark two computer vision tasks: multiclass
+    histologic brain tumor classification and patch-based contrastive
+    representation learning. We hope OpenSRH will facilitate the clinical
+    translation of rapid optical imaging and real-time ML-based surgical
+    decision support in order to improve the access, safety, and efficacy of
+    cancer surgery in the era of precision medicine.</p>
     <!--hr class="carddiv"-->
 </div>
 
-<div style="position: relative; border-radius:10px; padding:0px; padding-bottom: 56.25%; margin-top:20px">
+<div style="position: relative; border-radius:10px; padding:0px;
+padding-bottom: 56.25%; margin-top:20px">
     <iframe src="https://www.youtube.com/embed/H36ERdgU-nI"
-    style="border-radius:10px;position:absolute;top:0;left:0;width:100%; height:100%" title="OpenSRH Presentation" frameborder="0px"
+    style="border-radius:10px;position:absolute;top:0;left:0;width:100%;
+    height:100%" title="OpenSRH Presentation" frameborder="0px"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
     picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <div style="background-color: #eeeeef; border-radius:10px;padding:20px;margin-top:20px">
-    <p><b>Abstract: </b> Accurate intraoperative diagnosis is essential for providing safe and effective care during
-        brain tumor surgery. Our standard-of-care diagnostic methods are time, resource, and labor intensive, which
-        restricts access to optimal surgical treatments. To address these limitations, we propose an alternative
-        workflow that combines stimulated Raman histology (SRH), a rapid optical imaging method, with deep
-        learning-based automated interpretation of SRH images for intraoperative brain tumor diagnosis and real-time
-        surgical decision support. Here, we present <i>OpenSRH</i>, the first public dataset of clinical SRH images from
-        300+ brain tumors patients and 1300+ unique whole slide optical images. OpenSRH contains data from the most
-        common brain tumors diagnoses, full pathologic annotations, whole slide tumor segmentations, raw and processed
-        optical imaging data for end-to-end model development and validation. We provide a framework for patch-based
-        whole slide SRH classification and inference using weak (i.e. patient-level) diagnostic labels. Finally, we
-        benchmark two computer vision tasks: multiclass histologic brain tumor classification and patch-based
-        contrastive representation learning. We hope OpenSRH will facilitate the clinical translation of rapid optical
-        imaging and real-time ML-based surgical decision support in order to improve the access, safety, and efficacy of
-        cancer surgery in the era of precision medicine.</p>
-    <!--hr class="carddiv"-->
-</div>
-<div style="background-color: #eeeeef; border-radius:10px;padding:20px;margin-top:20px">
     <pre style="margin-bottom:0px; background-color: #dddddd; border-color: #aaaaaa">
-@article{jiang2022opensrh,
-    title={OpenSRH: optimizing brain tumor surgery using intraoperative stimulated Raman histology},
-    author={Jiang, Cheng and Chowdury, Asadur and Hou, Xinhai and Kondepudi, Akhil and Freudiger, Christian W. and Conway, Kyle and Camelo-Piragua, Sandra and Orringer, Daniel A. and Lee, Honglak and Hollon, Todd C.},
-    journal={arXiv preprint arXiv:2206.08439},
-    year={2022}
-}</pre>
+@inproceedings{jiang2022opensrh,
+    title={Open{SRH}: optimizing brain tumor surgery using intraoperative stimulated Raman histology},
+    author={Jiang, Cheng and Chowdury, Asadur Zaman and Hou, Xinhai and Kondepudi, Akhil and Freudiger, Christian and Conway, Kyle Stephen and Camelo-Piragua, Sandra and Orringer, Daniel A and Lee, Honglak and Hollon, Todd},
+    booktitle={Thirty-sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+    year={2022},
+}
+</pre>
 </div>
